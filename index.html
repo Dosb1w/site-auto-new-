@@ -5,14 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script>document.documentElement.classList.add('js')</script>
 
-  <title>ПроАвто — шиномонтаж и автосервис в Верхней Пышме</title>
-  <meta name="description" content="ПроАвто: шиномонтаж, балансировка, замена масла и жидкостей, ремонт ходовой в Верхней Пышме. Ежедневно с 9 до 21. Называем цену до начала работ."/>
+  <title>Шиномонтаж и автосервис в Верхней Пышме — ПроАвто, ул. Гальянова 3</title>
+  <meta name="description" content="ПроАвто в Верхней Пышме: шиномонтаж от 2 200 ₽, балансировка колёс, замена масла, ремонт ходовой. ул. Гальянова 3, ежедневно с 9 до 20. Цену называем до начала работ."/>
   <meta name="keywords" content="шиномонтаж Верхняя Пышма, автосервис, замена масла, балансировка колёс, ремонт ходовой, ПроАвто"/>
   <meta name="theme-color" content="#F4F0E8"/>
-  <meta property="og:title" content="ПроАвто — автосервис в Верхней Пышме"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+  <!-- Если подключишь свой домен, поменяй адрес в canonical и og:url -->
+  <link rel="canonical" href="https://dosb1w.github.io/site-auto-new-/"/>
+  <meta property="og:title" content="Шиномонтаж и автосервис в Верхней Пышме — ПроАвто"/>
   <meta property="og:description" content="Шиномонтаж, масло, ходовая. Быстро, качественно, без скрытых доплат."/>
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="ru_RU"/>
+  <meta property="og:url" content="https://dosb1w.github.io/site-auto-new-/"/>
+  <meta property="og:site_name" content="ПроАвто"/>
+  <meta property="og:image" content="https://dosb1w.github.io/site-auto-new-/img/og.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Шиномонтаж ПроАвто на ул. Гальянова, 3 в Верхней Пышме"/>
+  <meta name="twitter:card" content="summary_large_image"/>
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2314161A'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E63224'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23F4F0E8'/%3E%3C/svg%3E">
 
@@ -24,21 +34,40 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dosb1w.github.io/site-auto-new-/#business",
     "name": "ПроАвто",
+    "description": "Шиномонтаж, балансировка колёс, замена масла и технических жидкостей, ремонт ходовой части, аренда оборудованного бокса в Верхней Пышме.",
+    "url": "https://dosb1w.github.io/site-auto-new-/",
+    "image": ["https://dosb1w.github.io/site-auto-new-/img/og.jpg", "https://dosb1w.github.io/site-auto-new-/img/proauto-shinomontazh-vhod.jpg", "https://dosb1w.github.io/site-auto-new-/img/proauto-oborudovanie-shinomontazha.jpg"],
     "telephone": "+7-912-225-65-99",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "ул. Гальянова, 3",
       "addressLocality": "Верхняя Пышма",
+      "addressRegion": "Свердловская область",
+      "postalCode": "624093",
       "addressCountry": "RU"
     },
     "geo": { "@type": "GeoCoordinates", "latitude": 56.972206, "longitude": 60.558690 },
+    "areaServed": { "@type": "City", "name": "Верхняя Пышма" },
+    "sameAs": ["https://yandex.ru/maps/org/proavto/168821052317/"],
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
       "opens": "09:00",
-      "closes": "21:00"
-    }]
+      "closes": "20:00"
+    }],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Услуги автосервиса",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Шиномонтаж" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 2200, "priceCurrency": "RUB" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Балансировка колёс" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Замена масла и технических жидкостей" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ремонт ходовой части" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Аренда оборудованного бокса" }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": 3000, "priceCurrency": "RUB", "unitText": "день" } }
+      ]
+    }
   }
   </script>
 
@@ -324,6 +353,56 @@
     .map-pin b { display: block; font-weight: 600; line-height: 1.25; }
     .map-pin span { font-size: .85rem; color: var(--muted); }
 
+
+    /* ───── Рейтинг в hero ───── */
+    .hero-meta { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+    .rating {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .45rem 1rem .45rem .8rem; border-radius: 999px;
+      background: var(--card); border: 1px solid var(--line);
+      font-size: .9rem; font-weight: 500; text-decoration: none;
+      transition: border-color .2s, transform .18s;
+    }
+    .rating:hover { border-color: var(--ink); transform: translateY(-1px); }
+    .rating svg { width: 16px; height: 16px; color: var(--yellow); flex: none; }
+    .rating b { font-weight: 700; }
+    .rating span { color: var(--muted); }
+    .card--red .chips li.price-chip { background: #fff; color: var(--ink); border-color: #fff; font-weight: 700; }
+
+    /* ───── Вопросы и ответы ───── */
+    .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 3rem; align-items: start; }
+    .faq-grid .lead { margin-top: 1.1rem; }
+    .faq-list { display: grid; gap: .8rem; }
+    .faq-list details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 0 1.4rem; transition: border-color .2s; }
+    .faq-list details[open] { border-color: var(--ink); }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 1.15rem 0;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+      font-weight: 600; font-size: 1.05rem;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { content: '+'; font-family: var(--display); font-size: 1.4rem; line-height: 1; color: var(--red); flex: none; }
+    .faq-list details[open] summary::after { content: '–'; }
+    .faq-list details p { padding-bottom: 1.2rem; color: var(--muted); }
+    .faq-list details a { color: var(--ink); font-weight: 600; }
+
+    /* ───── Фото ───── */
+    .gallery { display: flex; flex-wrap: wrap; gap: 12px; }
+    .gallery::after { content: ''; flex-grow: 999999; }
+    .gallery figure {
+      height: 300px; flex-grow: calc(var(--ar) * 100); flex-basis: calc(var(--ar) * 300px);
+      position: relative; overflow: hidden; border-radius: 18px; background: var(--paper-2);
+    }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
+    .gallery figure:hover img { transform: scale(1.03); }
+    .gallery figcaption {
+      position: absolute; left: 12px; bottom: 12px;
+      padding: .3rem .8rem; border-radius: 999px;
+      background: rgba(20,22,26,.78); color: #fff; font-size: .8rem; font-weight: 500;
+    }
+    @media (max-width: 980px) { .gallery figure { height: 260px; flex-basis: calc(var(--ar) * 260px); } }
+    @media (max-width: 640px) { .gallery { gap: 8px; } .gallery figure { height: 200px; flex-basis: calc(var(--ar) * 200px); border-radius: 14px; } }
+
     /* ───── Футер ───── */
     footer { background: var(--ink); color: rgba(255,255,255,.7); padding: 3rem 0; }
     .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
@@ -347,7 +426,7 @@
 
     /* ───── Адаптив ───── */
     @media (max-width: 980px) {
-      .hero-grid, .diy-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-grid, .diy-grid, .contact-grid, .faq-grid { grid-template-columns: 1fr; }
       .hero-art { width: min(80%, 420px); margin-top: 1.5rem; }
       .c-1, .c-4 { grid-column: span 6; }
       .c-2, .c-3 { grid-column: span 3; }
@@ -409,6 +488,7 @@
       <a href="#services">Услуги</a>
       <a href="#how">Как работаем</a>
       <a href="#diy">Сделай сам</a>
+      <a href="#faq">Вопросы</a>
       <a href="#contacts">Контакты</a>
     </nav>
 
@@ -428,8 +508,15 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="status" data-status>
-        <i class="dot"></i><span data-status-text>Ежедневно с 09:00 до 21:00</span>
+      <div class="hero-meta">
+        <div class="status" data-status>
+          <i class="dot"></i><span data-status-text>Ежедневно с 09:00 до 20:00</span>
+        </div>
+        <!-- Оценка и число оценок — по данным Яндекс Карт, при изменении обнови вручную -->
+        <a class="rating" href="https://yandex.ru/maps/org/proavto/168821052317/reviews/" target="_blank" rel="noopener" aria-label="Рейтинг 4,4 на Яндекс Картах, 15 оценок">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg>
+          <b>4,4</b> <span>Яндекс Карты · 15 оценок</span>
+        </a>
       </div>
 
       <h1>Шиномонтаж и автосервис <span class="hl">в Верхней Пышме</span></h1>
@@ -445,7 +532,7 @@
       </div>
 
       <div class="facts">
-        <div class="fact"><b>Пн–Вс 09–21</b><span>без выходных</span></div>
+        <div class="fact"><b>Пн–Вс 09–20</b><span>без выходных</span></div>
         <div class="fact"><b>ул. Гальянова 3</b><span>Верхняя Пышма</span></div>
         <div class="fact"><b>Цена заранее</b><span>без скрытых доплат</span></div>
       </div>
@@ -494,7 +581,7 @@
           </g>
         </g>
       </svg>
-      <div class="sticker"><small>ежедневно</small><strong>9–21</strong></div>
+      <div class="sticker"><small>ежедневно</small><strong>9–20</strong></div>
     </div>
   </div>
 </section>
@@ -518,7 +605,7 @@
         </div>
         <h3>Шиномонтаж</h3>
         <p>Снятие, установка и монтаж шин любых типов. Работаем с легковыми автомобилями, внедорожниками и минивэнами.</p>
-        <ul class="chips"><li>Легковые</li><li>Внедорожники</li><li>Минивэны</li></ul>
+        <ul class="chips"><li class="price-chip">от 2 200 ₽</li><li>Легковые</li><li>Внедорожники</li><li>Минивэны</li></ul>
       </article>
 
       <article class="card c-2 reveal">
@@ -537,7 +624,7 @@
         </div>
         <h3>Замена технических жидкостей</h3>
         <p>Масло, фильтры, антифриз и тормозная жидкость.</p>
-        <ul class="chips"><li>Моторное масло</li><li>Трансмиссионное</li><li>Фильтры</li><li>Антифриз</li><li>Тормозная</li></ul>
+        <ul class="chips"><li>Моторное масло</li><li>Трансмиссионное</li><li>Фильтры</li><li>Антифриз</li><li>Тормозная</li><li>Промывка печки</li></ul>
       </article>
 
       <article class="card card--ink c-4 reveal">
@@ -549,6 +636,29 @@
         <p>Диагностика и ремонт подвески. Без скрытых доплат: стоимость называем до начала работ.</p>
         <ul class="chips"><li>Шаровые опоры</li><li>Сайлентблоки</li><li>Рулевые тяги</li><li>Ступичные подшипники</li><li>Амортизаторы</li></ul>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ФОТО -->
+<section id="photos" style="padding-top: 24px;">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Наш сервис</span>
+        <h2>Так выглядит ПроАвто</h2>
+      </div>
+      <p>Ищите красный баннер «Шиномонтаж» у дороги на ул. Гальянова, 3. Заезжайте, всё как на фото.</p>
+    </div>
+
+    <div class="gallery reveal">
+      <figure style="--ar:2.218"><img src="img/proauto-shinomontazh-fasad.jpg" width="1280" height="577" alt="Шиномонтаж ПроАвто в Верхней Пышме на ул. Гальянова, 3: здание и красный баннер у дороги" loading="lazy"><figcaption>Вход со стороны дороги</figcaption></figure>
+      <figure style="--ar:0.750"><img src="img/proauto-shinomontazh-vhod.jpg" width="960" height="1280" alt="Вход в бокс шиномонтажа ПроАвто с пандусом и вывеской" loading="lazy"><figcaption>Вход в бокс</figcaption></figure>
+      <figure style="--ar:0.750"><img src="img/proauto-balansirovka-koles.jpg" width="960" height="1280" alt="Колесо на шиномонтажном станке и балансировочный стенд в ПроАвто" loading="lazy"><figcaption>Шиномонтаж и балансировка</figcaption></figure>
+      <figure style="--ar:0.750"><img src="img/proauto-oborudovanie-shinomontazha.jpg" width="577" height="769" alt="Шиномонтажный станок и рабочая зона в автосервисе ПроАвто" loading="lazy"><figcaption>Рабочая зона</figcaption></figure>
+      <figure style="--ar:0.750"><img src="img/proauto-podemnik-i-instrument.jpg" width="577" height="769" alt="Подъёмник и инструмент в боксе автосервиса ПроАвто" loading="lazy"><figcaption>Подъёмник и инструмент</figcaption></figure>
+      <figure style="--ar:0.750"><img src="img/proauto-komnata-otdyha.jpg" width="577" height="769" alt="Комната отдыха для клиентов автосервиса ПроАвто: диван, телевизор, чайник" loading="lazy"><figcaption>Комната отдыха</figcaption></figure>
+      <figure style="--ar:2.218"><img src="img/proauto-shinomontazh-s-ulitsy.jpg" width="1280" height="577" alt="Как найти шиномонтаж ПроАвто на ул. Гальянова в Верхней Пышме: вид с улицы" loading="lazy"><figcaption>Вид с улицы</figcaption></figure>
     </div>
   </div>
 </section>
@@ -597,6 +707,44 @@
   </div>
 </section>
 
+<!-- ВОПРОСЫ И ОТВЕТЫ -->
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div class="reveal">
+      <span class="eyebrow">Коротко о главном</span>
+      <h2>Частые вопросы</h2>
+      <p class="lead">Не нашли ответ — позвоните, расскажем и назовём цену до начала работ.</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <details>
+        <summary>Где находится шиномонтаж ПроАвто в Верхней Пышме?</summary>
+        <p>Мы на ул. Гальянова, 3, в Верхней Пышме, рядом с остановкой «Магазин Южный». Ориентир — красный баннер «Шиномонтаж» у дороги и автомойка самообслуживания по соседству. Есть парковка. Маршрут можно построить <a href="https://yandex.ru/maps/org/proavto/168821052317/" target="_blank" rel="noopener">в Яндекс Картах</a>.</p>
+      </details>
+      <details>
+        <summary>Сколько стоит шиномонтаж?</summary>
+        <p>Шиномонтаж у нас стоит от 2 200 ₽. Точную сумму мастер называет после осмотра автомобиля, до начала работ, и вы платите только оговорённую стоимость.</p>
+      </details>
+      <details>
+        <summary>С какими автомобилями вы работаете?</summary>
+        <p>Шиномонтаж делаем для легковых автомобилей, внедорожников и минивэнов. Для остальных работ уточните по телефону <a href="tel:+79122256599">+7 912 225-65-99</a>.</p>
+      </details>
+      <details>
+        <summary>Какие работы по ремонту ходовой вы делаем?</summary>
+        <p>Диагностируем подвеску и меняем шаровые опоры, сайлентблоки, рулевые тяги, ступичные подшипники и амортизаторы. Также делаем балансировку колёс и заменяем масло, фильтры, антифриз и тормозную жидкость.</p>
+      </details>
+      <details>
+        <summary>Что такое аренда бокса «Сделай сам»?</summary>
+        <p>Вы сами ремонтируете машину в нашем оборудованном боксе: есть подъёмник, профессиональный инструмент и оборудование, а мастер рядом и подскажет. Стоимость 3 000 ₽ за полный рабочий день.</p>
+      </details>
+      <details>
+        <summary>Нужна ли запись и до скольки вы работаете?</summary>
+        <p>Лучше позвонить заранее: уточним свободное время и что нужно сделать. Работаем ежедневно, без выходных, с 09:00 до 20:00.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- КОНТАКТЫ + КАРТА -->
 <section id="contacts" style="padding-top: 24px;">
   <div class="wrap contact-grid">
@@ -612,7 +760,7 @@
         </li>
         <li>
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6.5V12l3.5 2"/></svg></span>
-          <div><small>Режим работы</small><strong>Пн–Вс: 09:00 – 21:00</strong></div>
+          <div><small>Режим работы</small><strong>Пн–Вс: 09:00 – 20:00</strong></div>
         </li>
         <li>
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
@@ -624,6 +772,7 @@
         <a href="tel:+79122256599" class="btn btn--red">Позвонить</a>
         <a href="https://wa.me/79122256599" class="btn btn--line" target="_blank" rel="noopener">WhatsApp</a>
         <a href="https://t.me/+79122256599" class="btn btn--line" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://yandex.ru/maps/org/proavto/168821052317/reviews/" class="btn btn--line" target="_blank" rel="noopener">Отзывы на Яндекс Картах</a>
       </div>
     </div>
 
@@ -634,7 +783,7 @@
         loading="lazy" allowfullscreen></iframe>
       <div class="map-pin">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
-        <div><b>ул. Гальянова 3</b><span data-status-short>Пн–Вс 09:00–21:00</span></div>
+        <div><b>ул. Гальянова 3</b><span data-status-short>Пн–Вс 09:00–20:00</span></div>
       </div>
     </div>
   </div>
@@ -682,7 +831,7 @@
     reveals.forEach(el => el.classList.add('visible'));
   }
 
-  /* «Сейчас открыто» — по времени Екатеринбурга, часы работы 09:00–21:00 */
+  /* «Сейчас открыто» — по времени Екатеринбурга, часы работы 09:00–20:00 */
   function updateStatus() {
     let h, m;
     try {
@@ -691,8 +840,8 @@
       m = +p.find(x => x.type === 'minute').value;
     } catch (e) { return; }
     const t = h + m / 60;
-    const open = t >= 9 && t < 21;
-    const text = open ? 'Сейчас открыто · до 21:00'
+    const open = t >= 9 && t < 20;
+    const text = open ? 'Сейчас открыто · до 20:00'
                : t < 9 ? 'Сейчас закрыто · откроемся в 09:00'
                        : 'Сейчас закрыто · откроемся завтра в 09:00';
     document.querySelectorAll('[data-status]').forEach(el => el.classList.toggle('is-open', open));
